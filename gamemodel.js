@@ -66,22 +66,22 @@ document.addEventListener("keydown", function (event) {
     {
         if (event.key === "s") {
 
-        playerDirY = 2;
+        playerDirY = 1;
         playerDirX = 0;
     }
     if (event.key === "a") {
 
-        playerDirX = -2;
+        playerDirX = -1;
         playerDirY = 0;
     }
     if (event.key === "d") {
 
-        playerDirX = 2;
+        playerDirX = 1;
         playerDirY = 0;
     }
     if (event.key === "w") {
         playerDirX = 0;
-        playerDirY = -2;
+        playerDirY = -1;
     }
     }
     
