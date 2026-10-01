@@ -1,0 +1,40 @@
+/*Lucas Fernandes*/
+
+.page {
+    background-color: rgb(66, 0, 0);
+    text-align: center;
+    color: red;
+}
+
+#gameSection {
+    border: 3px solid red;
+}
+
+@keyframes svgAnimation {
+    0% {
+        stroke: rgb(85, 255, 0);
+    }
+
+    25% {
+        stroke: rgb(0, 251, 255);
+    }
+
+    50% {
+        stroke: rgb(255, 0, 217);
+    }
+    75% {
+        stroke: rgb(0,251,255)
+    }
+
+    100% {
+        stroke: rgb(85,255,0)
+    }
+
+}
+
+#player {
+    animation-name: svgAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    stroke-width: 3px;    
+}

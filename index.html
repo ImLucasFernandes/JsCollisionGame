@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src=gamemodel.js defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>You've Already Lost</title>
+</head>
+
+<body class="page container-fluid">
+    <header>
+        <h1>You've Already Lost The Game</h1>
+        <p>
+            Welcome to the game You've Already Lost. Avoid the enemy moving squares, if you collide with them
+            you lose. If you run out of time, you lose. Increase the timer by hitting the yellow Time Ups. 
+            hitting borders will shoot you in the opposite direction, try not to go mad!
+        </p>
+    </header>
+    <main>
+        <div class="mb-3">
+            <p>Controls are AWSD respectively, click anywhere in the game windo witht the mouse to begin, the square will move in the associated key direction
+                constantly.</p>
+            <p>You are currently the white square with the animated border. If you wish to change the color, input the first lowercase letter of the desired
+                color. Color options include: orange, turqoise and green: </p>
+            <input id="colorInput" type="text">
+        </div>
+
+        <svg id="gameSection" width=300 height=600>
+            <rect id="player" x="150" y="300" width=25 height=25 fill="white" />
+            <rect id="squareX1" x="100" y="100" width=15 height=15 fill="rgb(80,0,0)" />
+            <rect id="squareX2" x="125" y="200" width=15 height=15 fill="rgb(80,0,0)" />
+            <rect id="squareX3" x="250" y="300" width=15 height=15 fill="rgb(80,0,0)" />
+            <rect id="squareX4" x="200" y="400" width=15 height=15 fill="rgb(80,0,0)" />
+            <rect id="squareX5" x="225" y="500" width=15 height=15 fill="rgb(80,0,0)" />
+            <rect id="squareX6" x="250" y="550" width=15 height=15 fill="rgb(80,0,0)" />
+        </svg>
+        <h1 id="timer">Time Left: </h1>
+        <h1 id="timeUpDisplay">Time Ups Collected: 0</h1>
+    </main>
+    <footer>Lucas Fernandes 000969276 Copyright 2026</footer>
+</body>
+
+</html>
